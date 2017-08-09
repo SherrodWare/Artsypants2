@@ -1,0 +1,152 @@
+/*
+mobile-first(min-width)
+FLEXBOX
+created by:Kerstin Graudins
+date:5/6/2017
+font-family: 'Diplomata', cursive;
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Diplomata|New+Rocker|Suez+One');
+
+
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+header{
+    text-align: center;
+}
+.masthead{
+   font-family: 'New Rocker', cursive;
+}
+.top-buffer{
+    margin-top: 20px;
+}
+.main-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1.67%;
+  margin: auto; }
+
+.flex-container {
+  margin-bottom: 10px; }
+  .flex-container:last-of-type {
+    margin-bottom: 0; }
+  @media (min-width: 40em) {
+    .flex-container {
+      display: flex; } }
+
+[class*="level-"] {
+  width: 100%; }
+  @media (min-width: 40em) {
+    [class*="level-"] {
+      margin: 0 .83%; } }
+  [class*="level-"]:first-of-type {
+    margin-left: 0; }
+  [class*="level-"]:last-of-type {
+    margin-right: 0; }
+
+nav {
+  width: 100%; }
+  @media (min-width: 40em) {
+    nav {
+      width: 33%;
+      margin-right: 1.67%; } }
+
+section {
+  width: 100%; }
+  @media (min-width: 40em) {
+    section {
+      width: 65.33%; } }
+
+@media (min-width: 40em) {
+  .content-a {
+    width: 30%; }
+  .content-c {
+    width: 42%; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ font-family: 'New Rocker', cursive;
+}
+
+.hidden {
+  display: none; }
+
+.show {
+  display: inherit;
+  z-index: 1; }
+
+nav {
+  background-color: #2DA9FF;
+  position: relative;
+  width: 100%; }
+  nav a {
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    text-decoration: none;
+    background-color: #2DA9FF; }
+  nav a:hover {
+    background-color: #0A75BE; }
+
+ul {
+  display: none;
+  list-style-type: none; }
+  @media (min-width: 40em) {
+    ul {
+      display: flex; } }
+  @media (min-width: 40em) {
+    ul li {
+      width: 100%; } }
+  @media (min-width: 61.25em) {
+    ul li {
+      width: 10%; } }
+
+li.dropdown {
+  position: relative; }
+
+.dropdown-content {
+  display: inline-block; }
+
+@media (min-width: 40em) {
+  li.dropdown:hover ul {
+    display: inline !important; } }
+
+ul#sub-menu {
+  display: none;
+  width: 100%; }
+  @media (min-width: 40em) {
+    ul#sub-menu {
+      position: fixed;
+      left: 0; } }
+  @media (min-width: 61.25em) {
+    ul#sub-menu {
+      position: absolute;
+      left: 0; } }
+  @media (min-width: 40em) {
+    ul#sub-menu li {
+      width: 25%;
+      float: left; } }
+  @media (min-width: 61.25em) {
+    ul#sub-menu li {
+      float: none;
+      text-align: left;
+      width: 100%;
+      line-height: 2em; } }
+
+#mobile-only {
+  position: relative; }
+  @media (min-width: 40em) {
+    #mobile-only {
+      display: none; } }
+  #mobile-only img {
+    position: absolute;
+    left: 5%;
+    top: 15px;
+    height: 15px;
+    width: auto; }
+
+/*# sourceMappingURL=app.css.map */
