@@ -153,5 +153,16 @@ ul#sub-menu {
     top: 15px;
     height: 15px;
     width: auto; }
+/*this is for the home/index page  */
+#home {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+
+#home p{
+    font-family: sans-serif;
+    font-size: 1.5em;
+}
 
 /*# sourceMappingURL=app.css.map */
