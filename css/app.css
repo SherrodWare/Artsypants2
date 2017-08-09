@@ -15,6 +15,11 @@ font-family: 'Diplomata', cursive;
 header{
     text-align: center;
 }
+form{
+    
+    padding-left: 100px;
+}
+
 .masthead{
    font-family: 'New Rocker', cursive;
 }
