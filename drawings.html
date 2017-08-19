@@ -44,28 +44,61 @@
                 <a href="index.html">Home</a>
             </li>
             <li class="dropdown">
-                <a href="" class="expand">Portfolio</a>
-                <ul id="sub-menu" class="dropdown-content">
+                <a href="" class="expand dropdown" >Portfolio</a>
+                <ul id="sub-menu"  class="dropdown-content" > 
                     <li>
-                        <a href="ig.html">Painting</a>
+                        <a href="ig.html">Paintings</a>
                     </li>
                     <li>
                         <a href="prints.html">Prints</a>
                     </li>
                     <li>
-                        <a href="drawings.html">Drawing</a>
+                        <a href="drawings.html">Drawings</a>
                     </li>
                     <li>
-                        <a href="sculptures.html">Sculpture</a>
+                        <a href="sculptures.html">Sculptures</a>
                     </li>
                 </ul>
             </li>
             <li>
-                <a href="">Contact</a>
+                <a href="contact.php">Contact</a>
             </li>
         </ul>
     </nav>
-<?php include ("includes/simple.php");?>
+<!-- begining of light box image gallery-->
+    <div class="row">
+    <div class="offset-md-2 col-md-8">
+        <div class="row">
+            <a href="images/draw/apaero.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="images/draw/thaero.jpg" class="img-fluid">
+            </a>
+             <a href="images/draw/apgirl.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="images/draw/thgirl.jpg" class="img-fluid">
+            </a>
+             <a href="images/draw/apscissor.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="images/draw/thscissor.jpg" class="img-fluid">
+            </a>
+           
+        </div>
+        <div class="row top-buffer">
+             <a href="images/draw/apskull.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="images/draw/thskull.jpg" class="img-fluid">
+            </a>
+           
+        </div>
+         
+    </div>
+</div> 
+     
+     
+     
+<!-- java script for light box-->
+<script>
+     $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });    
+</script>
  </body>   
  
 </html>

@@ -1,0 +1,223 @@
+/*
+mobile-first(min-width)
+FLEXBOX
+created by:Kerstin Graudins
+date:5/6/2017
+font-family: 'Diplomata', cursive;
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Diplomata|New+Rocker|Suez+One');
+
+
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+header{
+    text-align: center;
+}
+.masthead{
+   font-family: 'New Rocker', cursive;
+}
+.top-buffer{
+    margin-top: 20px;
+}
+.main-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1.67%;
+  margin: auto; }
+
+.flex-container {
+  margin-bottom: 10px; }
+  .flex-container:last-of-type {
+    margin-bottom: 0; }
+  @media (min-width: 40em) {
+    .flex-container {
+      display: flex; } }
+
+[class*="level-"] {
+  width: 100%; }
+  @media (min-width: 40em) {
+    [class*="level-"] {
+      margin: 0 .83%; } }
+  [class*="level-"]:first-of-type {
+    margin-left: 0; }
+  [class*="level-"]:last-of-type {
+    margin-right: 0; }
+
+nav {
+  width: 100%; }
+  @media (min-width: 40em) {
+    nav {
+      width: 33%;
+      margin-right: 1.67%; } }
+
+section {
+  width: 100%; }
+  @media (min-width: 40em) {
+    section {
+      width: 65.33%; } }
+
+@media (min-width: 40em) {
+  .content-a {
+    width: 30%; }
+  .content-c {
+    width: 42%; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ font-family: 'New Rocker', cursive;
+}
+
+.hidden {
+  display: none; 
+width: 10%; } 
+/*the z-index pulls the drop down menu in front of the pics for the Desktop view*/
+.show {
+  display: inherit;
+  z-index: 1; }
+
+nav {
+  background-color: #2DA9FF;
+  position: relative;
+  width: 100%; }
+  nav a {
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    text-decoration: none;
+    background-color: #2DA9FF; }
+  nav a:hover {
+    background-color: #0A75BE; }
+
+ul {
+  display: none;
+  list-style-type: none; }
+  @media (min-width: 40em) {
+    ul {
+      display: flex; } }
+  @media (min-width: 40em) {
+    ul li {
+      width: 100%; } }
+  @media (min-width: 61.25em) {
+    ul li {
+      width: 10%; } }
+/*the z-index pulls the drop down menu in front of the pics for the laptop view*/
+li.dropdown {
+  position: relative;
+    z-index: 10;
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Allows you to go to the links in the dropdown doesn't work */
+/*ul, ul li {
+    pointer-events:none;
+}
+a {
+    pointer-events:auto;
+}*/
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+/* Try it Yourself */
+
+.dropdown-content {
+  display: inline-block; }
+
+@media (min-width: 40em) {
+  li.dropdown:hover ul {
+    display: inline !important; } }
+
+ul#sub-menu {
+  display: none;
+  width: 100%; }
+  @media (min-width: 40em) {
+    ul#sub-menu {
+      position: fixed;
+      left: 0; } }
+  @media (min-width: 61.25em) {
+    ul#sub-menu {
+      position: absolute;
+      left: 0; } }
+  @media (min-width: 40em) {
+    ul#sub-menu li {
+      width: 25%;
+      float: left; } }
+  @media (min-width: 61.25em) {
+    ul#sub-menu li {
+      float: none;
+      text-align: left;
+      width: 100%;
+      line-height: 2em; } }
+
+#mobile-only {
+  position: relative; }
+  @media (min-width: 40em) {
+    #mobile-only {
+      display: none; } }
+  #mobile-only img {
+    position: absolute;
+    left: 5%;
+    top: 15px;
+    height: 15px;
+    width: auto; }
+/*this is for the home/index page  */
+#home {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+
+#home p{
+    font-family: sans-serif;
+    font-size: 1.5em;
+}
+
+/*# sourceMappingURL=app.css.map */
+
+/*# sourceMappingURL=app.css.map */
